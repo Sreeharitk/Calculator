@@ -1,0 +1,101 @@
+html{
+    box-sizing: border-box;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+}
+
+
+.calc-body{
+    width: 30%;
+    background-color: #3a4655;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+.container{
+    padding: 10px;
+}
+
+.q-dis{
+    display: flex;
+    justify-content: end;
+    font-size: 50px;
+    border-bottom: dotted 1px #727b86;
+    color: #727b86;
+}
+
+.a-dis{
+    display: flex;
+    justify-content: end;
+    font-size: 70px;
+    padding: 20px 0;
+}
+
+.bt-grp{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-auto-rows: 100px;
+    gap: 5px;
+}
+
+.bt-grp div{
+    font-size: 30px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #425062; */
+    border-radius: 20px;
+}
+
+.bt-op{
+    background-color: #404D5E;
+}
+
+.bt-num{
+    background-color: #425062;
+}
+
+@media (max-width:800px) {
+    .q-dis{
+        font-size: 20px;
+    }
+    .a-dis{
+        font-size: 40px;
+    }
+    .bt-grp{
+        grid-auto-rows: 50px;
+        gap: 3px;
+    }
+    .bt-grp div{
+        font-size: 15px;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width:450px) {
+    .q-dis{
+        font-size: 15px;
+    }
+    .a-dis{
+        font-size: 30px;
+    }
+    .bt-grp{
+        grid-auto-rows: 30px;
+        gap: 1.5px;
+    }
+    .bt-grp div{
+        font-size: 8px;
+        border-radius: 10px;
+    }
+}
